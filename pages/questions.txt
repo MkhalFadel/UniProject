@@ -1,0 +1,59 @@
+1- What does HTML stand for?
+Hyper Text Markup Language ✅
+High Text Machine Language
+Hyperlinks and Text Markup Language
+Home Tool Markup Language
+
+2- Which tag is used for a line break?
+<br> ✅
+<lb>
+<break>
+<line>
+
+3- Which CSS property changes text color?
+font-color
+text-color
+color ✅
+foreground
+
+4- Which symbol is used for comments in HTML?
+//
+/* */
+<!-- --> ✅
+#
+
+5- Which language is used for web interactivity?
+HTML
+CSS
+Java
+JavaScript ✅
+
+6- Which HTML tag is used to display an image?
+<img> ✅
+<image>
+<src>
+<picture>
+
+7- Which CSS property controls the spacing between lines of text?
+spacing
+line-height ✅
+text-spacing
+letter-spacing
+
+8- What does CSS stand for?
+Cascading Style Sheets ✅
+Creative Style System
+Computer Style Sheets
+Colorful Style Syntax
+
+9- Which HTML attribute specifies an external CSS file?
+href ✅
+src
+link
+style
+
+10- Which JavaScript function is used to log messages to the console?
+alert()
+console.log() ✅
+print()
+document.write()
