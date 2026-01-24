@@ -14,11 +14,20 @@ body {
     color: white;
 }
 
+.bodyResults{
+    height: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Background */
 .bg-animation {
     position: absolute;
     width: 200%;
-    height: 200%;
+    height: 250%;
     background: linear-gradient(45deg,
         #1d2671,
         #c33764,
@@ -62,12 +71,17 @@ body {
 
 /* Home Page */
 .start-container {
+    height: fit-content;
     text-align: center;
     background: rgba(255,255,255,0.12);
     padding: 60px 50px;
     border-radius: 20px;
     backdrop-filter: blur(12px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.start-container h1, .start-container p{
+    margin-bottom: 40px ;
 }
 
 .start-btn {
@@ -80,6 +94,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .start-btn:hover {
@@ -88,7 +103,7 @@ body {
 
 /* Quiz Card */
 .quiz-container {
-    width: 450px;
+    width: 700px;
     background: rgba(255,255,255,0.12);
     padding: 40px;
     border-radius: 20px;
@@ -99,7 +114,7 @@ body {
 
 /* Progress Bar */
 .progress-bar {
-    height: 10px;
+    height: 20px;
     background: rgba(255,255,255,0.3);
     border-radius: 10px;
     margin-bottom: 25px;
@@ -107,15 +122,58 @@ body {
 
 .progress-fill {
     height: 100%;
-    width: 0%;
-    background: white;
+    width: 10%;
+    background-color: white;
     border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.buttonsDiv{
+    margin-top: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.nextBtn, .previousBtn{
+    border: none;
+    padding: 7px 15px;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 /* Options */
 .options {
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
+}
+
+.answerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0 14px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all ease-in-out 0.15s;
+}
+
+.answerDiv:hover{
+    scale: 1.05;
+}
+
+.answerDiv input{
+    margin-right: 10px;
+}
+
+.answerDiv p{
+    color: black;
 }
 
 .option-btn {
@@ -128,16 +186,28 @@ body {
     cursor: pointer;
 }
 
-.option-btn.correct { background: #4caf50; color: white; }
-.option-btn.wrong { background: #e53935; color: white; }
+.scoreText{
+    font-size: 4rem;
+    margin-top: 10px;
+}
 
-.next-btn,
-.restart-btn {
-    margin-top: 20px;
-    padding: 12px 35px;
-    border-radius: 30px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    display: none;
+.scoreResult{
+    font-size: 3rem;
+    color: rgb(0, 195, 255);
+}
+
+.answerResultDiv{
+    background-color: white;
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.correct{
+    background-color: rgb(0, 196, 0);
+}
+
+.wrong{
+    background-color: red;
 }

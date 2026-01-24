@@ -4,8 +4,30 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Results page</title>
+   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-   <h1>This is the results page</h1>
+<body class="bodyResults">
+   <div class="bg-animation"></div>
+
+   <div class="quiz-container" style="margin-top: 25px;">
+
+      <h1>📊 Quiz Results</h1>
+      <p id="scoreText" class="scoreText">Your Score</p>
+      <p class="scoreResult">7/10</p>
+      <p id="percentageText" style="margin-bottom: 20px;"></p>
+
+      <h2 style="margin-top: 30px;">📝 Answer Review</h2>
+
+      <div id="resultsList" style="margin-top: 20px; text-align: left;">
+      </div>
+
+      <div class="buttonsDiv">
+         <button class="previousBtn" onclick="window.location.href='index.html'; localStorage.clear()">Home</button>
+         <button class="nextBtn" onclick="window.location.href='questions.html'; localStorage.clear()">Retry Quiz</button>
+      </div>
+
+   </div>
+
+   <script src="../results.js"></script>
 </body>
 </html>
