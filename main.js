@@ -3,100 +3,100 @@ const questions = [
     {
         question: "What does HTML stand for?",
         options: [
-            {ans: "Hyper Text Markup Language"},
-            {ans: "High Text Machine Language"},
-            {ans: "Hyperlinks Text Markup Language"},
-            {ans: "Home Tool Markup Language"},
+            "Hyper Text Markup Language",
+            "High Text Machine Language",
+            "Hyperlinks Text Markup Language",
+            "Home Tool Markup Language",
         ],
         correct: "Hyper Text Markup Language"
     },
     {
         question: "Which tag is used for a line break?",
         options: [
-            {ans: "<br>"},
-            {ans: "<lb>"},
-            {ans: "<break>"},
-            {ans: "<line>"},
+            "<br>",
+            "<lb>",
+            "<break>",
+            "<line>",
         ],
         correct: "<br>"
     },
     {
         question: "Which CSS property changes text color?",
         options: [
-            {ans: "font-color"},
-            {ans: "text-color"},
-            {ans: "color"},
-            {ans: "foreground"},
+            "font-color",
+            "text-color",
+            "color",
+            "foreground",
         ],
         correct: "color" 
     },
     {
         question: "Which symbol is used for comments in HTML?",
         options: [
-            {ans: "//"},
-            {ans: "/* */"},
-            {ans: "<!-- -->"},
-            {ans: "#"},
+            "//",
+            "/* */",
+            "<!-- -->",
+            "#",
         ],
         correct: "<!-- -->"
     },
     {
         question: "Which language is used for web interactivity?",
         options: [
-            {ans: "HTML"},
-            {ans: "CSS"},
-            {ans: "Java"},
-            {ans: "JavaScript"},
+            "HTML",
+            "CSS",
+            "Java",
+            "JavaScript",
         ],
         correct: "JavaScript"
     },
     {
         question: "Which HTML tag is used to display an image?",
         options: [
-            {ans: "<img>"},
-            {ans: "<image>"},
-            {ans: "<src>"},
-            {ans: "<picture>"},
+            "<img>",
+            "<image>",
+            "<src>",
+            "<picture>",
         ],
         correct: "<img>"
     },
     {
         question: "Which CSS property controls the spacing between lines of text?",
         options: [
-            {ans: "spacing"},
-            {ans: "line-height"},
-            {ans: "text-spacing"},
-            {ans: "letter-spacing"},
+            "spacing",
+            "line-height",
+            "text-spacing",
+            "letter-spacing",
         ],
         correct: "line-height"
     },
     {
         question: "What does CSS stand for?",
         options: [
-            {ans: "Cascading Style Sheets"},
-            {ans: "Creative Style System"},
-            {ans: "Computer Style Sheets"},
-            {ans: "Colorful Style Syntax"},
+            "Cascading Style Sheets",
+            "Creative Style System",
+            "Computer Style Sheets",
+            "Colorful Style Syntax",
         ],
         correct: "Cascading Style Sheets"
     },
     {
         question: "Which HTML attribute specifies an external CSS file?",
         options: [
-            {ans: "href"},
-            {ans: "src"},
-            {ans: "link"},
-            {ans: "style"},
+            "href",
+            "src",
+            "link",
+            "style",
         ],
         correct: "href"
     },
     {
-        question: "10- Which JavaScript function is used to log messages to the console?",
+        question: "Which JavaScript function is used to log messages to the console?",
         options: [
-            {ans: "alert()"},
-            {ans: "console.log()"},
-            {ans: "print()"},
-            {ans: "document.write()"},
+            "alert()",
+            "console.log()",
+            "print()",
+            "document.write()",
         ],
         correct: "console.log()"
     },
@@ -143,20 +143,20 @@ function loadAnswers()
         4-The Rad.checked = false is used here to uncheck the radio element each time the question changes
     */ 
 
-    Ans1.textContent = questions[currentQuestion].options[0].ans;
-    Rad1.value = questions[currentQuestion].options[0].ans;
+    Ans1.textContent = questions[currentQuestion].options[0];
+    Rad1.value = questions[currentQuestion].options[0];
     Rad1.checked = false
     
-    Ans2.textContent = questions[currentQuestion].options[1].ans;
-    Rad2.value = questions[currentQuestion].options[1].ans;
+    Ans2.textContent = questions[currentQuestion].options[1];
+    Rad2.value = questions[currentQuestion].options[1];
     Rad2.checked = false
 
-    Ans3.textContent = questions[currentQuestion].options[2].ans;
-    Rad3.value = questions[currentQuestion].options[2].ans;
+    Ans3.textContent = questions[currentQuestion].options[2];
+    Rad3.value = questions[currentQuestion].options[2];
     Rad3.checked = false
     
-    Ans4.textContent = questions[currentQuestion].options[3].ans;
-    Rad4.value = questions[currentQuestion].options[3].ans;
+    Ans4.textContent = questions[currentQuestion].options[3];
+    Rad4.value = questions[currentQuestion].options[3];
     Rad4.checked = false
 }
 
@@ -244,7 +244,7 @@ function previousQuestion() {
 
     if(currentQuestion === 9)
     {
-        nextBtn.innerHTML = 'Next =>' // Change the text in the nextBtn to "Next =>" if it is not the last question
+        nextBtn.innerHTML = 'Next >>' // Change the text in the nextBtn to "Next =>" if it is not the last question
         nextBtn.removeEventListener('click', submitAnswers)
         nextBtn.addEventListener("click", nextQuestion)
     }
